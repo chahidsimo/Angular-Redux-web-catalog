@@ -1,0 +1,10 @@
+<table class="table table-hover" *ngIf="state">
+  <thead>
+  <tr>
+    <th>ID</th><th>Name</th><th>Price</th><th>Quantity</th><th>Selected</th><th>Available</th>
+  </tr>
+  </thead>
+
+  <app-product-item *ngFor="let product of state.products" [product]="product" style="display: contents"></app-product-item>
+
+</table>
